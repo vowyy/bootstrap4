@@ -82,62 +82,85 @@
     <!--########################START HERE#########################-->
 
     <!-- JUSTIFY -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius.</p>
+    <p class="h2 text-center">〜<span class="text-primary">text-justifyで列の端を揃える</span>〜</p>
+    <br>
+    (使用前)
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius. sed placeat omnis doloribus, corrupti eius. sed placeat omnis doloribus, corrupti eius.</p>
+　  (使用後)
+    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius. sed placeat omnis doloribus, corrupti eius. sed placeat omnis doloribus, corrupti eius.</p>
 
-    <br><br>
-
+    <hr>
     <!-- ALIGNMENT -->
-    <p>Text aligned left</p>
-    <p>Text aligned center</p>
-    <p>Text aligned right</p>
+    <p class="h2 text-center">〜<span class="text-primary">文字配置</span>〜</p>
+    <br>
+    <p class="text-left">text-left</p>
+    <p class="text-center"> text-center</p>
+    <p class="text-right">text-right</p>
+    <hr>
 
     <!-- RESPONSIVE ALIGN -->
-    <p>Right aligned on small or larger</p>
-    <p>Right aligned on medium or larger</p>
-    <p>Right aligned on large or larger</p>
-    <p>Right aligned on xl or larger</p>
-
-    <p>Left aligned text on small or larger</p>
-    <p>Left aligned text on medium or larger</p>
-    <p>Left aligned text on large or wider</p>
-    <p>Left aligned text on extra large or wider</p>
-
-    <p>Center aligned text on small or larger</p>
-    <p>Center aligned text on medium or larger</p>
-    <p>Center aligned text on large or wider</p>
-    <p>Center aligned text on extra large or wider</p>
-
-    <br><br>
+    <p class="h2 text-center">〜<span class="text-primary">画面サイズごとの文字配置(mdの場合)</span>〜</p>
+    <br>
+    <p class="text-sm-right">text-sm-right</p>
+    <p class="text-md-right">text-md-right</p>
+    <p class="text-lg-right">text-lg-right</p>
+    <p class="text-xl-right">text-xl-right</p>
+    <br>
+    <p class="text-sm-center">text-sm-center</p>
+    <p class="text-md-center">text-md-center</p>
+    <p class="text-lg-center">text-lg-center</p>
+    <p class="text-xl-center">text-xl-center</p>
+    <br>
+    <p class="text-sm-left">text-sm-left</p>
+    <p class="text-md-left">text-md-left</p>
+    <p class="text-lg-left">text-lg-left</p>
+    <p class="text-xl-left">text-xl-left</p>
+    <hr>
 
     <!-- VERTICAL ALIGNMENT -->
-    <span class="align-baseline">baseline</span>
-    <span class="align-top">top</span>
-    <span class="align-bottom">bottom</span>
-    <span class="align-middle">middle</span>
-    <span class="align-text-top">text-top</span>
-    <span class="align-text-bottom">text-bottom</span>
+    <p class="h2 text-center">〜<span class="text-primary">文字の上下</span>〜</p>
+    <br>
+    <span class="align-baseline">align-baseline </span>
+    <span class="align-top">align-top </span>
+    <span class="align-bottom">align-bottom </span>
+    <span class="align-middle">align-middle </span>
+    <span class="align-text-top">align-text-top </span>
+    <span class="align-text-bottom">align-text-bottom </span>
 
-    <br><br>
+    <hr>
 
     <!-- TURN BLOCK TO INLINE -->
-    <h1>Hello</h1>
-    <h1>Goodbye</h1>
-
+    <p class="h2 text-center">〜<span class="text-primary">block要素 ⇄ inline要素 ⇄ inline-block要素</span>〜</p>
+    <br>
+    (block要素→ inline要素)
+    <h3 class="bg-success">d-inline</h3>
+    <h3 class="bg-danger">d-inline</h3>
+　　 <br>
+    <h3 class="d-inline bg-success">d-inline</h3>
+    <h3 class="d-inline bg-danger">d-inline</h3>
     <br><br>
 
     <!-- TURN INLINE TO BLOCK -->
-    <span>Block</span>
+    (inline要素→ block要素)
+    <br>
+    <span class="bg-success">d-block</span>
+    <span class="d-block bg-success">d-block</span>
 
     <br><br>
-
+   (block要素→ inline-block要素)
     <!-- INLINE BLOCK -->
-    <div>
-      <h3>Hello</h3>
-      This is inline
+    <div class="bg-success">
+      <h3>d-inline-block</h3>
     </div>
-    <div>
-      <h3>Hello</h3>
-      This is inline
+    <div class="bg-danger">
+      <h3>d-inline-block</h3>
+    </div>
+    <br>
+    <div class="d-inline-block bg-success">
+      <h3>d-inline-block</h3>
+    </div>
+    <div class="d-inline-block bg-danger">
+      <h3>d-inline-block</h3>
     </div>
   </div>
 
