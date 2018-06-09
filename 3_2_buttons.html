@@ -77,129 +77,154 @@
           </div>
         </div>
         <hr>
-      </header>
+    </header>
 
       <div class="container">
         <!--########################START HERE#########################-->
 
         <!-- BUTTONS -->
-        <button type="button">Primary</button>
-        <button type="button">Secondary</button>
-        <button type="button">Success</button>
-        <button type="button">Info</button>
-        <button type="button">Warning</button>
-        <button type="button">Danger</button>
-        <button type="button">Light</button>
-        <button type="button">Dark</button>
-        <button class="btn btn-link">Link</button>
+        <p class="h2 text-center">〜<span class="text-primary">buttonタグ　色 </span>〜</p>
+        <br>
 
-        <br><br>
+        <button class="btn btn-primary" type="button">btn-primary</button>
+        <button class="btn btn-secondary" type="button">btn-secondary</button>
+        <button class="btn btn-success" type="button">btn-success</button>
+        <button class="btn btn-info" type="button">btn-info</button>
+        <button class="btn btn-warning" type="button">btn-warning</button>
+        <button class="btn btn-danger" type="button">btn-danger</button>
+        <button class="btn btn-light"type="button">btn-light</button>
+        <button class="btn btn-dark"type="button">btn-dark</button>
+        <button class="btn btn-link">btn-link</button>
+        <hr>
 
         <!-- BUTTON TAGS -->
-        <a href="#" role="button">Link</a>
-        <button type="submit">Button</button>
-        <input type="button" value="Input">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <p class="h2 text-center">〜<span class="text-primary">aタグ, inputタグにbtn</span>〜</p>
+        <br>
 
-        <br><br>
+        <a href="#" role="button" class="btn btn-primary">Link</a>
+        <button class="btn btn-danger"type="submit">Button</button>
+        <input class="btn btn-info "type="button" value="Input">
+        <input class="btn btn-secondary"type="submit" value="Submit">
+        <input class="btn btn-warning" type="reset" value="Reset">
+        <div class="text-muted">inputタグのtype->見た目の形 value->文字</div>
+　　　　　<hr>
 
         <!-- OUTLINE BUTTONS -->
-        <button type="button">Primary Outline</button>
-        <button type="button">Secondary Outline</button>
-        <button type="button">Success Outline</button>
-        <button type="button">Info Outline</button>
-        <button type="button">Warning Outline</button>
-        <button type="button">Danger Outline</button>
-        <button type="button">Light Outline</button>
-        <button type="button">Dark Outline</button>
+        <p class="h2 text-center">〜<span class="text-primary">button　色2</span>〜</p>
+        <br>
 
-        <br><br>
+        <button class="btn btn-outline-primary" type="button">btn-outline-primary</button>
+        <button class="btn btn-outline-secondary" type="button">btn-outline-secondary</button>
+        <button class="btn btn-outline-success" type="button">btn-outline-success</button>
+        <button class="btn btn-outline-info" type="button">btn-outline-info</button>
+        <button class="btn btn-outline-warning" type="button">btn-outline-warning</button>
+        <button class="btn btn-outline-danger" type="button">btn-outline-danger</button>
+        <button class="btn btn-outline-light" type="button">btn-outline-light</button>
+        <button class="btn btn-outline-dark" type="button">btn-outline-dark</button>
+        <hr>
 
         <!-- BUTTON SIZES -->
-        <button type="button"><i class="fa fa-user"></i> Large button</button>
-        <button type="button">Small button</button>
-        <br><br>
-        <button type="button">Block level button</button>
+        <p class="h2 text-center">〜<span class="text-primary">button サイズ</span>〜</p>
+        <br>
 
+        <button class="btn btn-primary btn-lg"type="button"><i class="fa fa-user">btn btn-primary btn-lg</i></button>
+        <button class="btn btn-info btn-sm" type="button">btn btn-info btn-sm</button>
         <br><br>
+        <button class="btn btn-warning btn-block"type="button">btn btn-warning btn-block</button>
+        <hr>
 
         <!-- STATES -->
-        <button type="button">Regular Button</button>
-        <button type="button">Active Button</button>
-        <button type="button">Disabled Button</button>
+        <p class="h2 text-center">〜<span class="text-primary">button state</span>〜</p>
+        <br>
 
-        <button type="button">
-            Toggle State
+        <button class="btn btn-primary active d-block"type="button">active</button>
+        <button class="btn btn-primary disabled d-block"type="button">disabled</button>
+
+        <button class="btn btn-primary d-block" type="button" data-toggle="button">
+            data-toggle="button"
         </button>
-
-        <br><br>
-
-        <!-- BUTTON DROPDOWNS -->
-        <div>
-            <button type="button">
-                My Dropdown
-            </button>
-            <div>
-                <a href="#">Link One</a>
-                <a href="#">Link Two</a>
-                <a href="#">Link Three</a>
-            </div>
-        </div>
-
-        <br><br>
-
-        <!-- SPLIT DROPDOWNS -->
-        <div>
-            <button type="button">My Button</button>
-            <button type="button">
-                <span>Toggle Dropdown</span>
-            </button>
-            <div>
-                <a href="#">Link One</a>
-                <a href="#">Link Two</a>
-                <a href="#">Link Three</a>
-                <div></div>
-                <a href="#">Link Four</a>
-            </div>
-        </div>
-
-        <br><br>
+        <hr>
 
         <!-- BUTTON GROUPS -->
-        <div>
-            <button type="button">Left</button>
-            <button type="button">Middle</button>
-            <button type="button">Right</button>
-        </div>
+        <p class="h2 text-center">〜<span class="text-primary">button group</span>〜</p>
+        <br>
 
-        <br></br>
+        <div class="btn-group">
+            <button class="btn btn-primary" type="button">Left</button>
+            <button class="btn btn-warning" type="button">Middle</button>
+            <button class="btn btn-info" type="button">Right</button>
+        </div>
+        <hr>
+
+        <p class="h2 text-center">〜<span class="text-primary">button-group-vertical</span>〜</p>
+        <br>
+
+        <div class="btn-group-vertical">
+            <button class="btn btn-primary" type="button">Left</button>
+            <button class="btn btn-primary" type="button">Middle</button>
+            <button class="btn btn-primary" type="button">Right</button>
+        </div>
+        <hr>
 
         <!-- BUTTON TOOLBAR -->
-        <div>
-            <div>
-                <button type="button">1</button>
-                <button type="button">2</button>
-                <button type="button">3</button>
-                <button type="button">4</button>
+        <p class="h2 text-center">〜<span class="text-primary">button toolbar(btn-groupを束ねる)</span>〜</p>
+        <br>
+
+        <div class="btn-toolbar">
+            <div class="btn-group mr-2">
+                <button class="btn btn-primary" type="button">1</button>
+                <button class="btn btn-primary" type="button">2</button>
+                <button class="btn btn-primary" type="button">3</button>
+                <button class="btn btn-primary" type="button">4</button>
             </div>
-            <div>
-                <button type="button">5</button>
-                <button type="button">6</button>
-                <button type="button">7</button>
+            <div class="btn-group btn-group-sm mr-2">
+                <button class="btn btn-primary" type="button">5</button>
+                <button class="btn btn-primary" type="button">6</button>
+                <button class="btn btn-primary" type="button">7</button>
             </div>
-            <div>
-                <button type="button">8</button>
+            <div class="btn-group btn-group-lg">
+                <button class="btn btn-primary" type="button">8</button>
+                <button class="btn btn-primary" type="button">9</button>
+            </div>
+        </div>
+        <hr>
+
+        <!-- BUTTON DROPDOWNS -->
+        <p class="h2 text-center">〜<span class="text-primary">button dropdown(反応しない)</span>〜</p>
+        <br>
+
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                My Dropdown
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
             </div>
         </div>
 
-        <br><br>
+        <hr>
 
-        <div>
-            <button type="button">Left</button>
-            <button type="button">Middle</button>
-            <button type="button">Right</button>
+        <!-- SPLIT DROPDOWNS -->
+        <p class="h2 text-center">〜<span class="text-primary">button dropdown with btn-group</span>〜</p>
+        <br>
+
+        <div class="btn-group">
+            <button class="btn btn-warning"type="button">My Butto</button>
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">
+                <span>Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link One</a>
+                <a class="dropdown-item" href="#">Link Two</a>
+                <a class="dropdown-item" href="#">Link Three</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Link Four</a>
+            </div>
         </div>
+
+
 
     </div><!-- ./container -->
     <div style="margin-top:500px;"></div>
