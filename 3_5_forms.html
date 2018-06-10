@@ -76,124 +76,180 @@
           </div>
         </div>
         <hr>
-      </header>
+    </header>
 
       <div class="container">
         <!--########################START HERE#########################-->
 
-        <!-- FORM -->
-        <form>
-            <div>
+        <!-- TEXT FIELD-->
+        <p class="h2 text-center">〜<span class="text-primary">form (text-field)</span>〜</p>
+        <br>
+
+         <form>
+            <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter name">
+                <input class="form-control" type="text" id="name" placeholder="Enter name">
             </div>
-            <div>
+
+            <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="email" id="email" placeholder="Enter email">
-                <small>Your email will not be shared with anyone</small>
+                <input class="form-control form-control-sm" type="email" id="email" placeholder="Enter email">
+                <small class="form-text text-muted">Your email will not be shared with anyone</small>
             </div>
-            <div>
+
+            <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password" readonly>
+                <input class="form-control form-control-lg" type="password" id="password" placeholder="Password">
             </div>
-            <div>
-                <label for="gender">Gender</label>
-                <select id="gender">
-                <option>Male</option>
-                <option>Female</option>
-                </select>
-            </div>
-            <div>
-                <label for="message">Message</label>
-                <textarea id="message" rows="3"></textarea>
-            </div>
-            <div>
-                <label for="file">File input</label>
-                <input type="file" id="file">
-                <small id="fileHelp">Max 3mb size</small>
-            </div>
+          </form>
+            <hr>
 
-            <!-- FORM CHECK -->
-            <fieldset>
-                <legend>What are you using this service for?</legend>
-                <div>
-                  <label>
-                      <input type="radio" value="option1" checked>
-                      Personal
+            <!-- SELECT -->
+            <p class="h2 text-center">〜<span class="text-primary">form (select)</span>〜</p>
+            <br>
+
+            <form action="">
+              <div class="form-group">
+                  <label for="gender">Gender</label>
+                  <select class="form-control" id="gender">
+                  <option>Male</option>
+                  <option>Female</option>
+                  </select>
+              </div>
+            </form>
+            <hr>
+
+            <!-- TEXTAREA -->
+            <p class="h2 text-center">〜<span class="text-primary">form (textarea)</span>〜</p>
+            <br>
+
+            <form action="">
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+            </form>
+            <hr>
+
+            <!-- FILE -->
+            <p class="h2 text-center">〜<span class="text-primary">form (file)</span>〜</p>
+            <br>
+
+            <form action="">
+              <div class="form-group">
+                  <label for="file">File input</label>
+                  <input class="form-control-file" type="file" id="file">
+                  <small class="text-muted"id="fileHelp">Max 3mb size</small>
+              </div>
+            </form>
+            <hr>
+
+            <!-- CUSTOM FILE -->
+            <p class="h2 text-center">〜<span class="text-primary">form (custom-file)　効かない</span>〜</p>
+            <br>
+
+            <form action="">
+              <div class="custom-file">
+                  <label class="custom-file-lebel" for="file">File input</label>
+                  <input class="custom-file-input" type="file" id="file">
+                  <small class="text-muted"id="fileHelp">Max 3mb size</small>
+              </div>
+            </form>
+            <hr>
+
+
+            <!-- RANGE -->
+            <p class="h2 text-center">〜<span class="text-primary">form (range) 効かない</span>〜</p>
+            <br>
+
+            <form action="">
+             <div class="form-group">
+               <label for="membership">membership level</label>
+               <input class="custom-range" type="range">
+             </div>
+             <br>
+             <button class="btn btn-primary btn-block" type="submit">submit</button>
+            </form>
+            <hr>
+
+            <!-- INLINE FORM -->
+            <p class="h2 text-center">〜<span class="text-primary">form (inline)</span>〜</p>
+            <br>
+
+            <form class="form-inline">
+                <input class="form-control mr-2"type="text" id="username" placeholder="Enter username">
+                <input class="form-control mr-2"type="text" id="password" placeholder="Password">
+                <div class="form-check">
+                    <label class="form-check-lebel mr-2">
+                        <input type="checkbox" class="form-check-input"> Remember me
+                    </label>
+                </div>
+
+                <button class="btn btn-primay btn-light" type="submit">Submit</button>
+            </form>
+            <hr>
+
+            <!-- FORM ROW -->
+            <p class="h2 text-center">〜<span class="text-primary">form (row)</span>〜</p>
+            <br>
+
+            <form>
+              <div class="form-row">
+                <div class="col">
+                  <input class="form-control" type="text" placeholder="First name">
+                </div>
+                <div class="col">
+                  <input class="form-control" type="text" placeholder="Last name">
+                </div>
+              </div>
+            </form>
+            <hr>
+
+            <!-- FORM ROW -->
+            <p class="h2 text-center">〜<span class="text-primary">form (check)</span>〜</p>
+            <br>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
+              <label class="form-check-label" for="defaultCheck1">
+                標準のチェックボックス
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+              <label class="form-check-label" for="defaultCheck2">
+                無効のチェックボックス
+              </label>
+            </div>
+            <hr>
+
+            <!-- FORM RADIO -->
+            <p class="h2 text-center">〜<span class="text-primary">form (radio)</span>〜</p>
+            <br>
+
+            <form action="">
+              　<div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    標準のラジオボタン
                   </label>
                 </div>
-                <div>
-                  <label>
-                      <input type="radio" value="option1" checked>
-                      Commercial Use
+
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    標準のラジオボタン2
                   </label>
                 </div>
-                <div>
-                  <label>
-                      <input type="radio" value="option1"checked>
-                      Testing
+
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                  <label class="form-check-label" for="exampleRadios3">
+                    無効のラジオボタン
                   </label>
                 </div>
-            </fieldset>
-            <div>
-                <label>
-                <input type="checkbox">
-                    Sign up for newsletter
-                </label>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-
-        <br><br>
-
-        <!-- INLINE FORM -->
-        <form>
-            <input type="text" id="username" placeholder="Enter username">
-            <input type="text" id="password" placeholder="Password">
-            <div>
-                <label>
-                    <input type="checkbox"> Remember me
-                </label>
-            </div>
-
-            <button type="submit">Submit</button>
-        </form>
-
-        <br><br>
-
-        <!-- FORM ROW -->
-        <form>
-          <div>
-            <div>
-              <input type="text" placeholder="First name">
-            </div>
-            <div>
-              <input type="text" placeholder="Last name">
-            </div>
-          </div>
-        </form>
-
-        <br><br>
-
-        <!-- VALIDATION -->
-        <div>
-            <label for="username">Username</label>
-            <input type="text" id="username">
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="text" id="password">
-            <div>
-              Password not strong enough
-            </div>
-        </div>
-        <div>
-            <label for="password2">Confirm Password</label>
-            <input type="text" id="password2">
-            <div>
-              Password does not match
-            </div>
-        </div>
+        　　</form>
+        <hr>
 
     </div><!-- ./container -->
     <div style="margin-top:500px;"></div>
