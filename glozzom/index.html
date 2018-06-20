@@ -18,7 +18,7 @@
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
       <a href="index.html" class="navbar-brand">Glozzom</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="navcol">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navcol">
@@ -45,13 +45,157 @@
 
   <section id="showcase">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicator">
-        <li data-target="#myCarousel" data-slide-to="0" data-rideclass="active">
-
-        </li>
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" data-rideclass="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Heading One</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sapiente, illo et natus voluptates similique, sed dolores quia a! Neque.</p>
+              <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="display-3">Heading Two</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sapiente, illo et natus voluptates similique, sed dolores quia a! Neque.</p>
+              <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Heading Three</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sapiente, illo et natus voluptates similique, sed dolores quia a! Neque.</p>
+              <a href="#" class="btn btn-success btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#myCarousel" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
     </div>
   </section>
+
+  <section id="home-icons" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cog fa-3x mb-2"></i>
+          <h3>Truning Gears</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, accusantium.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cloud fa-3x mb-2"></i>
+          <h3>Sending datalist</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, accusantium.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cart-plus fa-3x mb-2"></i>
+          <h3>Making Money</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, accusantium.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="home-heading" class="p-5">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container pt-5">
+            <h1>Are You Ready To Get Started?</h1>
+            <p class="d-none d-md-block">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit consequuntur est sint possimus soluta debitis dicta expedita consequatur saepe odio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h3>Lorem ipsum.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, unde, doloremque cupiditate alias architecto cum?</p>
+          <a href="#" class="btn btn-outline-danger btn-lg">Learn More</a>
+        </div>
+        <div class="col-md-6">
+          <img src="img/laptop.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="video-play">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container py-5">
+            <a href="#" class="video nav-link" data-video="https://www.youtube.com/embed/HnwsG9a5riA" data-toggle="modal" data-target="#videoModal">
+              <i class="fas fa-play fa-3x"></i>
+              <h3>See What We Do</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" class="text-center py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Sign Up For Our NewsLetter</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, impedit culpa cumque quis blanditiis nesciunt recusandae illo reprehenderit nam quod!</p>
+          <form class="form-inline justify-content-center">
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
+            <button class="btn btn-primary mb-2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer" class="text-center p-4 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copy-right &copy; <span id="year"></span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
